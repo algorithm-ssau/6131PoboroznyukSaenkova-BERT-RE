@@ -1,0 +1,32 @@
+
+cd ./WooeyProj/
+celery -A WooeyProj worker --pool=solo -l info      
++ новый терминал
+python ./WooeyProj/manage.py runserver
+
+
+python setup.py build
+python setup.py install
+
+
+
+superuser:gnk
+mail:gnk@a.ru
+passw:a
+
+
+
+
+
+python manage.py 
+
+
+
+
+celery -A WooeyProj worker --pool=gevent -l info
+celery -A WooeyProj worker --pool=eventlet -l info    
+
+
+
+Set-ExecutionPolicy Unrestricted -Force
+./newenv/Scripts/activate
